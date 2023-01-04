@@ -70,7 +70,7 @@ public class EdgeServer {
                     }
 //                  Check if the user gives available numbers with the min and max nodes
                     if (edgesInt[0] >= edgeList.getNODES() || edgesInt[1] >= edgeList.getNODES() ||
-                    edgesInt[0] <= 0 || edgesInt[1] <= 0) {
+                    edgesInt[0] < 0 || edgesInt[1] < 0) {
                         out.println("Wrong input");
                         continue;
                     }
