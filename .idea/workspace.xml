@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8a7ada0-d66c-4a5a-910e-45116db5e1db" name="Changes" comment="">
+    <list default="true" id="d8a7ada0-d66c-4a5a-910e-45116db5e1db" name="Changes" comment="Update the data structure for the graph">
+      <change afterPath="$PROJECT_DIR$/graph.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EdgeList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EdgeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdgeServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -37,8 +45,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.EdgeClient">
-    <configuration name="EdgeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Exercise1-Question2">
+    <configuration name="EdgeClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EdgeClient" />
       <module name="Exercise2-Question1" />
       <method v="2">
@@ -52,13 +60,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise1-Question2" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Exercise1-Question2" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="EdgeServer" />
       <module name="Exercise2-Question1" />
+      <option name="VM_PARAMETERS" value="-Xmx10G" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Exercise1-Question2" />
+      <item itemvalue="Application.EdgeClient" />
+      <item itemvalue="Application.EdgeServer" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EdgeClient" />
@@ -77,6 +91,8 @@
       <workItem from="1671469762516" duration="14089000" />
       <workItem from="1671540473489" duration="2557000" />
       <workItem from="1672860538049" duration="284000" />
+      <workItem from="1675619370288" duration="28000" />
+      <workItem from="1675703528766" duration="449000" />
     </task>
     <servers />
   </component>
@@ -88,10 +104,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="graph-new-data-structure" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update the data structure for the graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the data structure for the graph" />
   </component>
 </project>
