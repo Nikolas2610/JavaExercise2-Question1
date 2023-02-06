@@ -8,6 +8,10 @@ class Graph {
     private final int NODES;
     private final HashMap<Integer, Integer>[] nodesArray;
     private final int EDGES;
+    private static final String ANSI_BLUE = "\u001B[34m";
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_GREEN = "\u001B[32m";
+    private static final String ANSI_RESET = "\u001B[0m";
 
     Graph(int NODES, int EDGES) {
         this.EDGES = EDGES;
@@ -21,7 +25,7 @@ class Graph {
         addEdgesAutomatically();
     }
 
-//    Get number of Nodes
+    //    Get number of Nodes
     public int getNODES() {
         return NODES;
     }
@@ -43,13 +47,13 @@ class Graph {
     public String edgeExists(int u, int v) {
         String message = "";
         if (nodesArray[u].containsKey(v) && nodesArray[v].containsKey(u)) {
-            message += "\033[34m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\033[0m\n" +
-                    "\033[32mThe edge between vertex " + u + " and vertex " + v + " exists in the graph.\033[0m\n" +
-                    "\033[34m++++++++++++++++++++++++++++++++++++++++++++\033[0m\n";
+            message += ANSI_BLUE + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" + ANSI_RESET +
+                    ANSI_GREEN + "The edge between vertex " + u + " and vertex " + v + " exists in the graph.\n" + ANSI_RESET +
+                    ANSI_BLUE + "++++++++++++++++++++++++++++++++++++++++++++\n" + ANSI_RESET;
         } else {
-            message += "\033[34m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\033[0m\n" +
-                    "\033[31mThe edge between vertex " + u + " and vertex " + v + " does not exist in the graph.\033[0m\n" +
-                    "\033[34m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\033[0m\n";
+            message += ANSI_BLUE + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" + ANSI_RESET +
+                    ANSI_RED + "The edge between vertex " + u + " and vertex " + v + " does not exist in the graph.\n" + ANSI_RESET +
+                    ANSI_BLUE + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" + ANSI_RESET;
         }
         return message;
     }
@@ -70,7 +74,7 @@ class Graph {
 
     // Save the graph to a txt file
     public void saveGraphToFile() {
-        System.out.println("\033[34m Start to save the edges to the graph.txt file! We need some time for this process\033[0m");
+        System.out.println(ANSI_BLUE + "Start to save the edges to the graph.txt file! We need some time for this process" + ANSI_RESET);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("graph.txt"))) {
             String message = printEdges();
             bw.write(message);
@@ -78,7 +82,7 @@ class Graph {
             System.out.println("An error occurred while saving the graph to a txt file");
             e.printStackTrace();
         }
-        System.out.println("\033[34m Save graph to file\033[0m");
+        System.out.println(ANSI_BLUE + "Save graph to file" + ANSI_RESET);
     }
 
     //  Return random number
