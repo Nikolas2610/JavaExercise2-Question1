@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8a7ada0-d66c-4a5a-910e-45116db5e1db" name="Changes" comment="Update the data structure for the graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EdgeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EdgeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +36,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.EdgeClient">
     <configuration name="EdgeClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EdgeClient" />
@@ -89,6 +89,8 @@
       <workItem from="1672860538049" duration="284000" />
       <workItem from="1675619370288" duration="28000" />
       <workItem from="1675703528766" duration="941000" />
+      <workItem from="1675705671750" duration="230000" />
+      <workItem from="1675708615701" duration="6039000" />
     </task>
     <task id="LOCAL-00001" summary="Update the data structure for the graph">
       <created>1675703999917</created>
