@@ -8,8 +8,7 @@ import java.net.Socket;
 public class EdgeServer {
     public static void main(String[] args) throws IOException {
 //      Get the random Graph
-        Graph graph = new Graph(3000000, 1000000);
-
+        Graph graph = new Graph(5, 10);
 //      Initialize socket server with port
         ServerSocket serverSocket = null;
         final int PORT = 10007;

@@ -16,9 +16,9 @@ class Graph {
     Graph(int NODES, int EDGES) {
         this.EDGES = EDGES;
         this.NODES = NODES;
-        nodesArray = new HashMap[NODES];
 
-//      Add the nodes to an array of hashmaps
+        // Initialize and add the nodes to an array of hashmaps
+        nodesArray = new HashMap[NODES];
         for (int i = 0; i < NODES; i++) {
             nodesArray[i] = new HashMap<>();
         }
@@ -65,7 +65,7 @@ class Graph {
         message += "The edges in the graph are: \n";
         for (int i = 0; i < NODES; i++) {
             for (int j : nodesArray[i].keySet()) {
-                message +=  i + " \t\t\t" + j + "\n";
+                message += i + " \t\t\t" + j + "\n";
             }
         }
         message += "++++++++++++++++++++++++++++++++++++++++++++\n";
